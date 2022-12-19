@@ -1,10 +1,10 @@
 
 from main.exemple import AI,BasicAI
 
-from shadok.memory import Memory
-from shadok.style import Style
-from shadok.progress_bar import ProgressBar, ProgressIterator
-from shadok.network import Population
+from main.utils.memory import Memory
+from main.utils.style import Style
+from main.utils.progress_bar import ProgressBar, ProgressIterator
+from main.utils.population import Population
 import sys
 
 from main.game import Game
@@ -121,14 +121,7 @@ class Trainer:
                 
         print(f"Win rate againt {cls.__name__}() : {wins/1000:.1%}")
         
-if __name__=="__main__":
-    
-    trainer = Trainer(BasicAI)
-    trainer.train(100)
-    
-    from main.player_collection import Economist
-    
-    trainer.evaluate_against(Economist)
+
 
     
     

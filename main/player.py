@@ -1,11 +1,10 @@
 
 
-#shadok imports
-from shadok.abstract import ABC, abstractmethod
-from shadok.network import Network,Population
-from shadok.memory import Memory
+from main.utils.abstract import ABC, abstractmethod
+from main.utils.network import Network
+from main.utils.population import Population
+from main.utils.memory import Memory
 
-#local imports
 from main.exceptions import OutOfCoins
 
 

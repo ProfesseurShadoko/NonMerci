@@ -1,7 +1,7 @@
 from main.player import Player
 from main.player_collection import Human,Economist
 
-from shadok.style import Style
+from main.utils.style import Style
 import numpy.random as rd
 import time
 
@@ -140,9 +140,5 @@ class Game:
             for i,player in enumerate(self.players,start=1):
                 print(f"{i}. {player} --> score:{player.get_score()}")
 
-if __name__=="__main__":
-    
-    game=Game()
-    game.add_player(Human(),Economist())
-    game.run()
+
             
