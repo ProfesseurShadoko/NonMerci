@@ -3,7 +3,7 @@
 from main.player import Player,AI
 
 """
-Create your algorithms here !
+Create your algorithms here! See main/games.py for the rules.
 
 If you want to simply create a player (without Artificial Intelligence and Training) :
 

@@ -2,6 +2,7 @@ from main.trainer import Trainer
 
 from main.player_collection import Economist
 from main.exemple import BasicAI,UpgradedAI,MyAI
+from players import *
 
 """
 here you can train your algorithms. In order to train a model (it must inherit from AI), run :
@@ -15,7 +16,7 @@ trainer.evaluate_against(OtherPlayerClass)       --> test your model against an 
 YourAI.reset_AI() #allows you to reset the training of your AI. You'll have to use it if you change network structure and input size.
 """
 
-trained = MyAI
+trained = UpgradedAI
 
 opponents = [
     Economist,
@@ -24,8 +25,7 @@ opponents = [
 ]
 
 trainer = Trainer(trained)
-trainer.train(1000)
-
+trainer.train(100)
 for opponent in opponents:
     trainer.evaluate_against(opponent)
 
